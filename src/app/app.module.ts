@@ -11,6 +11,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
+import { environment } from 'src/environments/environment';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -35,7 +36,7 @@ const routes: Routes=[
     MatDialogModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    AngularFireModule
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]
