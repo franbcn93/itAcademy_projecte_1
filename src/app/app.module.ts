@@ -10,6 +10,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -34,6 +35,7 @@ const routes: Routes=[
     MatDialogModule,
     RouterModule.forRoot(routes),
     FormsModule,
+    AngularFireModule
   ],
   providers: [],
   bootstrap: [AppComponent]

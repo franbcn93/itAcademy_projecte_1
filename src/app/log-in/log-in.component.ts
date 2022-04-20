@@ -18,7 +18,11 @@ export class LogInComponent implements OnInit {
 
   login() {
     this.user = {email: this.email, password: this.password};
-    console.log(this.user);
+    if(this.email==="" || this.password===""){
+      console.log("No puede estar vacio");
+    }else{
+      console.log(this.user);
+    }
   }
 
   getLogin(){
